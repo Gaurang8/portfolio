@@ -1,11 +1,19 @@
 import { Dot, Github, Instagram, Linkedin, Menu, User } from "lucide-react";
 import bgImage from "../assete/oQ65CY9Qk1W3v2c4ykiPXXB3og.png";
 import personImg from "../assete/person.jpg";
+import CurrentWork from "@/components/CurrentWork";
+import SayHi from "@/components/SayHi";
+
+
+const metadata = {
+  title: "Gaurang Khambhaliya",
+  description: "Hardworking and reliable web devloper with strong ability in Front-end devlopment. Highly organized, proactive and punctual with team-oriented mentality.",
+}; 
 
 
 export default function Home() {
   return (
-    <div className=" bg-black h-full w-full relative p-6">
+    <div className="  h-full w-full relative p-4">
       <div className=" absolute top-0 left-0 h-[550px] w-full">
         <img src={bgImage.src} alt="" className=" h-full w-full object-cover" />
       </div>
@@ -43,6 +51,10 @@ export default function Home() {
           >@trakkyservices</span>
         </div>
       </div>
+
+      <CurrentWork />
+      <SayHi />
+      <div className=" w-full h-24"></div>
     </div>
   );
 }
