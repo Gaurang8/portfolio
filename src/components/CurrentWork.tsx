@@ -38,7 +38,7 @@ const CurrentWork = () => {
             <div className=" flex flex-col gap-8">
                {
                 data.map((item, index) => (
-                    <div className=" flex gap-[10px]">
+                    <div className=" flex gap-[10px]" key={index}>
                     <div className=" w-20 h-20 grow-0 shrink-0 rounded-xl bg-[#2e2e2e] contrast-125 ">
                         <Image src={item.image} alt="" className=" w-full h-full rounded-xl" />
                     </div>
