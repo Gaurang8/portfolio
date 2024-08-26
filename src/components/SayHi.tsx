@@ -12,7 +12,7 @@ const SayHi = () => {
         <motion.div className=' p-2 w-full mt-20  max-w-[425px] mx-auto'
             initial={{ opacity: 0, scale: .7 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: .5 }}
+            transition={{ duration: .7 }}
             viewport={{ once: true }}
         >
             <div className=" rounded-3xl w-full h-full bg-gradient-to-r from-[#03031e] to-[#1f1111] pt-7 pb-4 flex flex-col">

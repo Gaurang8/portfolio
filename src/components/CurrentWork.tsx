@@ -48,8 +48,8 @@ const CurrentWork = () => {
                 {
                     data.map((item, index) => (
                         <motion.div className=" flex gap-[10px]" key={index}
-                            initial={{ opacity: 0, y: 15 }}
-                            transition={{ delay: .5 + index * .05 }}
+                            initial={{ opacity: 0, y: 25 }}
+                            transition={{ duration: .7 + index * .05 }}
                             whileInView={{ opacity: 1, y: 0 }}  
                             viewport={{once: true}}
                         >

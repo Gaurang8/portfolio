@@ -7,6 +7,8 @@ import personImg from "../assete/person.jpg";
 import CurrentWork from "@/components/CurrentWork";
 import SayHi from "@/components/SayHi";
 import { motion } from "framer-motion";
+import Educations from '@/components/Education';
+import Experience from '@/components/Experience';
 
 const metadata = {
   title: "Gaurang Khambhaliya",
@@ -25,25 +27,25 @@ export default function Home() {
           <Dot className=" h-6 w-6 scale-[2] text-white" />
         </div>
         <div className=" px-1 flex gap-4">
-          <Github className=" h-4 w-4 text-white font-light" 
+          <Github className=" h-4 w-4 text-white font-light cursor-pointer" 
             onClick={() => {
               window.open("https://github.com/Gaurang8" , "_blank");
             }}
             />
-          <Instagram className=" h-4 w-4 text-white" 
+          <Instagram className=" h-4 w-4 text-white cursor-pointer" 
             onClick={() => {
               window.open("https://www.instagram.com/_gaurang.patel_/?igsh=NXNhNm9qMnFqZDl5" , "_blank");
             }
             }
           />
-          <Linkedin className=" h-4 w-4 text-white" 
+          <Linkedin className=" h-4 w-4 text-white cursor-pointer" 
             onClick={() => {
               window.open("https://www.linkedin.com/in/gaurang-khambhaliya-2a4190167/?originalSubdomain=in" , "_blank");
             }}
             />
           {/* <Menu className=" h-4 w-4 text-white" /> */}
           {/* resume icon */}
-          <FileText className=" h-4 w-4 text-white" 
+          <FileText className=" h-4 w-4 text-white cursor-pointer" 
             onClick={() => {
               window.open("https://drive.google.com/file/d/1O8k20p1VTzOKL9da0n7oquapuaFVrzFE/view?usp=drive_link" , "_blank");
             }
@@ -69,7 +71,7 @@ export default function Home() {
         <motion.div className=" text-gray-700 text-sm font-medium"
           initial={{ opacity: 0 , x : -20}}
           animate={{ opacity: 1 , x : 0}}
-          transition={{ delay: .3 }}
+          transition={{ duration: .3 }}
         >
           Full stack web devloper <span className=" bg-gradient-to-r from-[#00b4ff] via-[#d319ff] to-[#ff0000cf] bg-clip-text"
             style={{
@@ -79,7 +81,13 @@ export default function Home() {
         </motion.div>
       </div>
 
+
+      <Experience />
+
       <CurrentWork />
+
+      <Educations />
+
       <SayHi />
 
       <div className=" w-full h-[200px] relative flex justify-end pb-10 items-center flex-col gap-2 -z-10 ">

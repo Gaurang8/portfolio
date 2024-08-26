@@ -11,3 +11,28 @@ body {
   padding: 0;
  background-color: black; 
 }
+
+.before-dot-icon::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 4px;
+  background: #000;
+  border: 1.5px solid white;
+}
+.before-dot-icon-first::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: -9px;
+  top: 0px;
+  background: black;
+}
+.experience-list li {
+  padding-top: 5px;
+  color: #cecece;
+}
