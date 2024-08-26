@@ -16,7 +16,7 @@ const metadata = {
 
 export default function Home() {
   return (
-    <div className="  h-full w-full relative p-4">
+    <div className="  h-full w-full relative p-4 max-w-[425px] mx-auto">
       <div className=" absolute top-0 left-0 h-[550px] w-full">
         <img src={bgImage.src} alt="" className=" h-full w-full object-cover" />
       </div>
