@@ -40,7 +40,7 @@ const data = [
 
 const CurrentWork = () => {
     return (
-        <div className=' pt-20 flex gap-5 flex-col'>
+        <div className=' pt-20 flex gap-5 flex-col  max-w-[425px] mx-auto'>
             <div className=" ">
                 <h2 className=' text-[#656565] font-semibold uppercase text-[11.5px] tracking-[3px] '>Current work</h2>
             </div>

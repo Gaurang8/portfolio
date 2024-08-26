@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 const SayHi = () => {
     return (
-        <motion.div className=' p-2 w-full mt-20'
+        <motion.div className=' p-2 w-full mt-20  max-w-[425px] mx-auto'
             initial={{ opacity: 0, scale: .7 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: .5 }}

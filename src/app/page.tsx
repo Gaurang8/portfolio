@@ -16,11 +16,11 @@ const metadata = {
 
 export default function Home() {
   return (
-    <div className="  h-full w-full relative p-4 max-w-[425px] mx-auto">
+    <div className="  h-full w-full relative p-4">
       <div className=" absolute top-0 left-0 h-[550px] w-full">
         <img src={bgImage.src} alt="" className=" h-full w-full object-cover" />
       </div>
-      <div className=" h-12 w-full rounded-lg bg-[#1b163c78] brightness-75 flex justify-between items-center p-3 ">
+      <div className=" h-12 w-full rounded-lg bg-[#1b163c78] brightness-75 flex justify-between items-center p-3  max-w-[425px] mx-auto ">
         <div className=" ml-4">
           <Dot className=" h-6 w-6 scale-[2] text-white" />
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className=" flex flex-col gap-5 mt-16">
+      <div className=" flex flex-col gap-5 mt-16  max-w-[425px] mx-auto">
         <div className=" flex gap-4 items-center">
           <div className=" h-20 w-20 rounded-full shrink-0 relative">
             <div className=" absolute h-[84px] w-[1px] left-1/2 -top-[84px] -translate-x-1/2 bg-white "></div>
@@ -87,7 +87,7 @@ export default function Home() {
           <img src={bgImage.src} alt="" className=" rotate-180 h-full w-full object-cover" />
         </div>
 
-        <div className=" text-xs opacity-50 text-gray-400">
+        <div className=" text-xs opacity-50 text-gray-400  max-w-[425px] mx-auto">
           Made by <span className=" text-[#00b4ff] font-semibold text-xs">Gaurang Khambhaliya</span>
         </div>
       </div>
