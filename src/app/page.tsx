@@ -9,6 +9,7 @@ import SayHi from "@/components/SayHi";
 import { motion } from "framer-motion";
 import Educations from '@/components/Education';
 import Experience from '@/components/Experience';
+import Skill from '@/components/Skill';
 
 const metadata = {
   title: "Gaurang Khambhaliya",
@@ -81,10 +82,11 @@ export default function Home() {
         </motion.div>
       </div>
 
+      <CurrentWork />
 
       <Experience />
 
-      <CurrentWork />
+      <Skill />
 
       <Educations />
 
