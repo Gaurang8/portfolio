@@ -41,7 +41,7 @@ const Educations = () => {
                             </ul>
                         </div>
                         <div className=" text-sm mt-1">
-                            <span className=' text-sm text-blue-500 font-semibold'>CGPA : </span> 9.03 <span className=' text-[11px] text-[#a2a2a2]'>( Till 4<sup>th</sup> Sem )</span>
+                            <span className=' text-sm text-blue-500 font-semibold'>CGPA : </span> 8.67 
                         </div>
                     </motion.div>
                     <motion.div className=" pl-5 relative flex gap-2 mt-10 flex-col"
@@ -57,31 +57,11 @@ const Educations = () => {
                             2019 - 2021
                         </span>
                         <p className=' text-[#a2a2a2] text-sm'>
-                            <span className=' text-blue-500'> JNV, </span>Bhavnagar, Gujarat
+                            <span className=' text-blue-500'> Jawahar Navodaya Vidyalaya, </span>Bhavnagar, Gujarat
                         </p>
 
                         <div className=" text-sm mt-1">
                             <span className=' text-sm text-blue-500 font-semibold'>Percentage : </span> 92.6%
-                        </div>
-                    </motion.div>
-                    <motion.div className=" pl-5 relative flex gap-2 mt-10 flex-col"
-                        initial={{ opacity: 0, x: 25 }}
-                        transition={{ duration: .5 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                    >
-                        <h3 className=' text-white text-base font-semibold before-dot-icon'>
-                            Secondary School
-                        </h3>
-                        <span className=' bg-slate-700 text-white p-1 inline w-fit px-3 font-semibold text-xs rounded-sm'>
-                            2019
-                        </span>
-                        <p className=' text-[#a2a2a2] text-sm'>
-                            <span className=' text-blue-500'> JNV, </span>Bhavnagar, Gujarat
-                        </p>
-
-                        <div className=" text-sm mt-1">
-                            <span className=' text-sm text-blue-500 font-semibold'>Percentage : </span> 89.6%
                         </div>
                         </motion.div>
                 </div>

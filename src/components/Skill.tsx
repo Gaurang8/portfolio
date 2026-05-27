@@ -12,28 +12,36 @@ import { motion } from 'framer-motion';
 
 const skillsData = [
     {
-        title: 'Frontend',
-        skills: ['HTML', 'CSS', 'ReactJs', 'NextJs', 'Tailwind CSS', 'Material UI', 'Redux toolkit']
-    },
-    {
-        title: 'Backend & Database',
-        skills: ['NodeJs', 'ExpressJs', 'MongoDB']
-    },
-    {
         title: 'Programming Languages',
-        skills: ['C', 'C++', 'JavaScript', 'Python']
+        skills: ['Python', 'JavaScript', 'TypeScript']
     },
     {
-        title: 'Development Tools',
-        skills: ['Git', 'Github', 'Visual Studio Code']
+        title: 'Frontend Development',
+        skills: ['React.js', 'Next.js', 'Tailwind CSS', 'Material UI', 'Redux Toolkit', 'TanStack Query']
     },
     {
-        title: 'Computer Science Fundamentals',
-        skills: ['REST API', 'OOPS', 'DSA', 'Problem Solving']
+        title: 'Backend Development',
+        skills: ['Django', 'Django REST Framework', 'Node.js', 'Express.js']
+    },
+    {
+        title: 'Database & Caching',
+        skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis']
+    },
+    {
+        title: 'Asynchronous & Event-Driven Systems',
+        skills: ['Celery', 'Kafka', 'WebSockets', 'Socket.io']
+    },
+    {
+        title: 'DevOps & Tools',
+        skills: ['Docker', 'Git', 'GitHub Actions', 'Postman', 'Nginx', 'Linux']
+    },
+    {
+        title: 'Architecture & Concepts',
+        skills: ['REST APIs', 'Authentication & Authorization', 'RBAC/ReBAC', 'Caching', 'Background Jobs', 'System Design Basics', 'OOP', 'DSA']
     }
 ]
 
-const highlightedSkills = ['ReactJs', 'NextJs', 'Tailwind CSS', 'JavaScript', 'REST API','Github']
+const highlightedSkills = ['React.js', 'Next.js', 'TypeScript', 'Django', 'Redis', 'Celery', 'Docker']
 const borderColors = ['border-rose-500', 'border-blue-500', 'border-green-500', 'border-yellow-500', 'border-indigo-500']
 
 const Work = () => {

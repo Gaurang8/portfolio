@@ -5,6 +5,7 @@ import BBImg from "../assete/chat_Web.png";
 import LUImg from "../assete/link-up.png";
 import SLImg from "../assete/songly.png";
 import UHImg from "../assete/Usability-clone.png";
+import ExpenzoImg from "../assete/expenzo_transparent.png";
 import Image from 'next/image';
 
 import { motion } from 'framer-motion';
@@ -13,8 +14,20 @@ import { Link } from 'lucide-react';
 
 const data = [
     {
-        title: 'BlabBurst - chat application',
-        description: 'BlabBurst is a chat application that allows users to chat in real time. ',
+        title: 'Expenzo',
+        description: 'Similar to Splitwise. Developed with Django + React, featuring Redis-based backend cache, TanStack Query-based client cache, Celery for background tasks, and a full Docker setup.',
+        image: ExpenzoImg,
+        directLink : ""
+    },
+    {
+        title: 'LXP Platform',
+        description: 'E-learning platform serving 100,000+ users. Developed the Coding Arena for running code in 40+ languages and key course creation modules.',
+        image: UHImg,
+        directLink : ""
+    },
+    {
+        title: 'BlabBurst - Chat App',
+        description: 'Created using the MERN stack with JWT authentication. Features real-time messaging with Socket.io and high-quality video calls enabled by Simple-peer.',
         image: BBImg,
         directLink : "https://github.com/Gaurang8/BlabBurst"
     },
@@ -29,12 +42,6 @@ const data = [
         description: 'Songly is a music application that allows users to listen and dwonload ringtone.',
         image: SLImg,
         directLink : "https://github.com/Gaurang8/songly"
-    },
-    {
-        title: 'usability.hub - UI clone',
-        description: 'usability.hub is a UI clone of a popular website.',
-        image: UHImg,
-        directLink : "https://github.com/Gaurang8/clone_usability.hub"
     }
 ]
 
@@ -58,15 +65,16 @@ const CurrentWork = () => {
                             </div>
                             <div className=" grow shrink flex gap-2 py-1 flex-col">
                                 <h3 className=' font-medium text-white text-sm'>
-                                    {item.title} <span>
-                                        <Link  className=' h-3 cursor-pointer w-3 ml-1 inline-block text-white'
-                                            onClick={() => {
-                                                window.open(item.directLink, "_blank");
-                                            }
-                                            }
-                                        />
-
-                                    </span>
+                                    {item.title} 
+                                    {item.directLink && (
+                                        <span>
+                                            <Link  className=' h-3 cursor-pointer w-3 ml-1 inline-block text-white'
+                                                onClick={() => {
+                                                    window.open(item.directLink, "_blank");
+                                                }}
+                                            />
+                                        </span>
+                                    )}
                                 </h3>
                                 <p className='text-[#777] text-[13px] w-[90%] line-clamp-2'>
                                     {item.description}

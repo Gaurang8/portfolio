@@ -34,7 +34,7 @@ const SayHi = () => {
                             whatsapp</button>
                         <button className='bg-gradient-to-r from-[#e79654e8] to-[#4747fb] cursor-pointer w-fit bg-clip-text text-transparent flex gap-1 items-center'
                             onClick={() => {
-                                window.open("mailto:gaurang8102003@gmail.com", "_blank");
+                                window.open("mailto:gaurangkhambhaliya@outlook.com", "_blank");
                             }}
                         >
                             <Mail className='h-4 w-4 inline-block text-[#e79654e8]' />

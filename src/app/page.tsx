@@ -13,7 +13,7 @@ import Skill from '@/components/Skill';
 
 const metadata = {
   title: "Gaurang Khambhaliya",
-  description: "Hardworking and reliable web devloper with strong ability in Front-end devlopment. Highly organized, proactive and punctual with team-oriented mentality.",
+  description: "Full Stack Engineer with experience building scalable web applications using React.js, Next.js, Django, and TypeScript. Passionate about scalable backend systems, distributed architectures, and building reliable user-centric products.",
 };
 
 
@@ -28,27 +28,27 @@ export default function Home() {
           <Dot className=" h-6 w-6 scale-[2] text-white" />
         </div>
         <div className=" px-1 flex gap-4">
-          <Github className=" h-4 w-4 text-white font-light cursor-pointer" 
+          <Github className=" h-4 w-4 text-white font-light cursor-pointer"
             onClick={() => {
-              window.open("https://github.com/Gaurang8" , "_blank");
+              window.open("https://github.com/Gaurang8", "_blank");
             }}
-            />
-          <Instagram className=" h-4 w-4 text-white cursor-pointer" 
+          />
+          <Instagram className=" h-4 w-4 text-white cursor-pointer"
             onClick={() => {
-              window.open("https://www.instagram.com/_gaurang.patel_/?igsh=NXNhNm9qMnFqZDl5" , "_blank");
+              window.open("https://www.instagram.com/_gaurang.patel_/?igsh=NXNhNm9qMnFqZDl5", "_blank");
             }
             }
           />
-          <Linkedin className=" h-4 w-4 text-white cursor-pointer" 
+          <Linkedin className=" h-4 w-4 text-white cursor-pointer"
             onClick={() => {
-              window.open("https://www.linkedin.com/in/gaurang-khambhaliya-2a4190167/?originalSubdomain=in" , "_blank");
+              window.open("https://www.linkedin.com/in/gaurang-khambhaliya-2a4190167/?originalSubdomain=in", "_blank");
             }}
-            />
+          />
           {/* <Menu className=" h-4 w-4 text-white" /> */}
           {/* resume icon */}
-          <FileText className=" h-4 w-4 text-white cursor-pointer" 
+          <FileText className=" h-4 w-4 text-white cursor-pointer"
             onClick={() => {
-              window.open("https://drive.google.com/file/d/1O8k20p1VTzOKL9da0n7oquapuaFVrzFE/view?usp=drive_link" , "_blank");
+              window.open("/gaurang_resume.pdf", "_blank");
             }
             }
           />
@@ -62,23 +62,22 @@ export default function Home() {
           </div>
           <div className=" flex flex-col">
             <div className=" font-semibold text-white text-lg">Gaurang Khambhaliya</div>
-            <div className=" text-[15px] text-gray-700 font-semibold">Full stack web devloper</div>
+            <div className=" text-[15px] text-gray-700 font-semibold">Software Engineer</div>
           </div>
         </div>
         <div className=" text-white font-light">
-          Hardworking and reliable web devloper with strong ability in Front-end devlopment.
-          Highly organized, proactive and punctual with team-oriented mentality.
+          Full Stack Engineer with experience building scalable web applications. Contributed to high-availability platforms serving 100,000+ users. Passionate about distributed architectures and user-centric products.
         </div>
         <motion.div className=" text-gray-700 text-sm font-medium"
-          initial={{ opacity: 0 , x : -20}}
-          animate={{ opacity: 1 , x : 0}}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: .3 }}
         >
-          Full stack web devloper <span className=" bg-gradient-to-r from-[#00b4ff] via-[#d319ff] to-[#ff0000cf] bg-clip-text"
+          Software Engineer <span className=" bg-gradient-to-r from-[#00b4ff] via-[#d319ff] to-[#ff0000cf] bg-clip-text"
             style={{
               WebkitTextFillColor: "transparent",
             }}
-          >@trakkyservices</span>
+          >@DRC Systems</span>
         </motion.div>
       </div>
 
